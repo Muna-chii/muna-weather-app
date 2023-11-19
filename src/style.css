@@ -1,0 +1,28 @@
+body {
+  text-align: center;
+  margin-top: 70px;
+}
+.search-city {
+  padding: 10px 30px;
+  padding-left: 10px;
+  font-size: larger;
+  border-radius: 50px;
+  border: 1px solid black;
+  background-color: transparent;
+}
+.submit-button {
+  padding: 10px;
+  font-size: large;
+  margin-left: 5px;
+  border: 1px solid black;
+  border-radius: 50px;
+  background-color: #9c668b;
+  color: white;
+  font-weight: 500;
+}
+.submit-button:hover {
+  background-color: white;
+  color: #9c668b;
+  border-color: #9c668b;
+  cursor: pointer;
+}
