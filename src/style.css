@@ -2,6 +2,7 @@ body {
   text-align: center;
   margin-top: 60px;
   background: #ffeeff;
+  max-width: 100%;
 }
 .search-city {
   width: 400px;

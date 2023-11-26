@@ -31,16 +31,16 @@
               required
             />
             <span>
-              <input type="button" value="Search" class="submit-button"
+              <input type="submit" value="Search" class="submit-button"
             /></span>
           </div>
         </form>
       </header>
       <div class="weather-forecast">
-        <div class="weather-today">
-          Weather Today in <strong>New York,</strong> <br />
+        <h1 class="weather-today">
+          Weather Today in <span id="city">New York</span> <br />
           <small>Tuesday, 15:20</small>
-        </div>
+        </h1>
         <hr />
         <div class="row">
           <div class="col">
@@ -72,8 +72,7 @@
           and hosted on <a href="muna-weather-livid.vercel.app">Vercel</a>
         </footer>
       </div>
-
-      <script src="src/index.js"></script>
     </div>
+    <script src="src\index.js"></script>
   </body>
 </html>
