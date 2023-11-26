@@ -4,20 +4,21 @@ body {
   background: #ffeeff;
 }
 .search-city {
-  padding: 10px 30px;
-  padding-left: 10px;
-  font-size: larger;
-  border-radius: 50px;
-  border: 2px solid grey;
+  width: 400px;
+  padding: 5px 20px;
+  padding-left: 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 2px solid white;
   background-color: white;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 .submit-button {
-  padding: 10px;
-  font-size: large;
+  padding: 6px 10px;
+  font-size: 15px;
   margin-left: 9px;
-  border: 1px solid black;
-  border-radius: 50px;
+  border: 1.5px solid #9c668b;
+  border-radius: 5px;
   background-color: #9c668b;
   color: white;
   font-weight: 500;
@@ -30,7 +31,7 @@ body {
   cursor: pointer;
 }
 .search-city:focus {
-  outline: 1px solid #9c668b;
+  outline: 2px solid #9c668b;
 }
 .weather-forecast {
   font-family: "Roboto", sans-serif;
