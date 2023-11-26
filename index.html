@@ -16,6 +16,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
 
@@ -44,23 +45,24 @@
         <hr />
         <div class="row">
           <div class="col">
-            <p id="temperature">
-              21°<span id="metric"
-                ><a href="#" id="degree-celcius">C</a>
-                |
-                <a href="#" id="degree-farenheit">F</a></span
-              >
-            </p>
+            <span id="temperature"> 21</span
+            ><span id="metric"
+              >°<a href="#" id="degree-celcius">C</a>
+              |
+              <a href="#" id="degree-farenheit">F</a></span
+            >
+
             <p>
               <small>
-                Humidity: <br />
-                Pressure: <br />Wind:</small
-              >
+                Humidity:
+                <strong class="more-details" id="humidity"></strong>
+                <br />Wind: <strong class="more-details" id="wind"></strong
+              ></small>
             </p>
           </div>
           <div class="col description">
-            <div id="icon">🌤️</div>
-            <span id="sky-description">Clouds</span>
+            <div id="icon"></div>
+            <span id="sky-description"></span>
           </div>
         </div>
 

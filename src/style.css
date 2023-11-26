@@ -60,6 +60,11 @@ footer {
   padding: 12px;
   font-size: 30px;
 }
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 70px;
+}
 
 #temperature {
   margin: 5px;
@@ -72,14 +77,22 @@ small {
 #metric {
   font-size: 25px;
   position: relative;
-  top: -50px;
-  right: -10px;
+  top: -40px;
+  left: -5px;
 }
 .col.description {
-  font-size: 35px;
+  font-size: 20px;
   position: relative;
-  top: 30px;
-  left: 20px;
-  color: #da9710;
+  top: 10px;
+  left: 60px;
+  color: #f84047;
   font-weight: 600;
+}
+.more-details {
+  color: red;
+}
+#sky-description {
+  position: relative;
+  left: 35px;
+  top: -20px;
 }
