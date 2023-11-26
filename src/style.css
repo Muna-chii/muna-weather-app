@@ -7,13 +7,13 @@ body {
   padding-left: 10px;
   font-size: larger;
   border-radius: 50px;
-  border: 1px solid black;
+  border: 2px solid grey;
   background-color: transparent;
 }
 .submit-button {
   padding: 10px;
   font-size: large;
-  margin-left: 5px;
+  margin-left: 9px;
   border: 1px solid black;
   border-radius: 50px;
   background-color: #9c668b;
@@ -23,6 +23,18 @@ body {
 .submit-button:hover {
   background-color: white;
   color: #9c668b;
-  border-color: #9c668b;
+  border: 1.9px solid #9c668b;
   cursor: pointer;
+}
+.search-city:focus {
+  outline: 1px solid #9c668b;
+}
+.weather-forecast {
+  margin-top: 40px;
+  border: 1px solid black;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  padding-bottom: 5px;
+  text-align: left;
 }

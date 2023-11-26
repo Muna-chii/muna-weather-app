@@ -16,18 +16,37 @@
             placeholder="Search for a city"
           />
           <span>
-            <input type="button" value="Search" class="submit-button"
+            <input type="button" value="Search" class="submit-button" required
           /></span>
         </div>
       </form>
     </header>
-    <footer>
-      This website was coded by
-      <a href="https://github.com/Muna-chii">Muna</a> and is open-sourced on
-      <a href="https://github.com/Muna-chii/muna-weather-app">Github</a>, and
-      hosted on <a href="muna-weather-livid.vercel.app">Vercel</a>
-    </footer>
-
-    <script src="src/index.js"></script>
+    <div class="weather-forecast">
+      <div>
+        <div class="city">
+          Weather Today in <strong>New York</strong>, As of 15:20. Tuesday
+        </div>
+        <hr />
+        <span> 21 </span>°<a href="#" id="degree-celcius">C</a> |
+        <a href="#" id="degree-farenheit">F</a>
+        <p>
+          Humidity: <br />
+          Pressure: <br />Wind:
+        </p>
+        <div class="description">
+          <div id="icon">🌤️</div>
+          <span class="description">Clouds</span>
+        </div>
+        <br />
+        <hr />
+        <footer>
+          This website was coded by
+          <a href="https://github.com/Muna-chii">Muna</a> and is open-sourced on
+          <a href="https://github.com/Muna-chii/muna-weather-app">Github</a>,
+          and hosted on <a href="muna-weather-livid.vercel.app">Vercel</a>
+        </footer>
+      </div>
+      <script src="src/index.js"></script>
+    </div>
   </body>
 </html>
