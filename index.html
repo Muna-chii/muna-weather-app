@@ -4,40 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muna App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600&family=Playfair+Display&family=Roboto:wght@100;300;400;500;700;900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="src/style.css" />
   </head>
+
   <body>
-    <header>
-      <form action="">
-        <div class="search-form">
-          <input
-            type="text"
-            class="search-city"
-            placeholder="Search for a city"
-          />
-          <span>
-            <input type="button" value="Search" class="submit-button" required
-          /></span>
-        </div>
-      </form>
-    </header>
-    <div class="weather-forecast">
-      <div>
-        <div class="city">
-          Weather Today in <strong>New York</strong>, As of 15:20. Tuesday
+    <div class="container">
+      <header>
+        <form action="">
+          <div class="search-form">
+            <input
+              type="text"
+              class="search-city"
+              placeholder="Search for a city"
+              required
+            />
+            <span>
+              <input type="button" value="Search" class="submit-button"
+            /></span>
+          </div>
+        </form>
+      </header>
+      <div class="weather-forecast">
+        <div class="weather-today">
+          Weather Today in <strong>New York,</strong> <br />
+          <small>Tuesday, 15:20</small>
         </div>
         <hr />
-        <span> 21 </span>°<a href="#" id="degree-celcius">C</a> |
-        <a href="#" id="degree-farenheit">F</a>
-        <p>
-          Humidity: <br />
-          Pressure: <br />Wind:
-        </p>
-        <div class="description">
-          <div id="icon">🌤️</div>
-          <span class="description">Clouds</span>
+        <div class="row">
+          <div class="col">
+            <p id="temperature">
+              21°<span id="metric"
+                ><a href="#" id="degree-celcius">C</a>
+                |
+                <a href="#" id="degree-farenheit">F</a></span
+              >
+            </p>
+            <p>
+              <small>
+                Humidity: <br />
+                Pressure: <br />Wind:</small
+              >
+            </p>
+          </div>
+          <div class="col description">
+            <div id="icon">🌤️</div>
+            <span id="sky-description">Clouds</span>
+          </div>
         </div>
-        <br />
+
         <hr />
         <footer>
           This website was coded by
@@ -46,6 +72,7 @@
           and hosted on <a href="muna-weather-livid.vercel.app">Vercel</a>
         </footer>
       </div>
+
       <script src="src/index.js"></script>
     </div>
   </body>
