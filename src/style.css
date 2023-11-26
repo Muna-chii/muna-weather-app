@@ -5,7 +5,7 @@ body {
   max-width: 100%;
 }
 .search-city {
-  width: 400px;
+  width: 300px;
   padding: 5px 20px;
   padding-left: 15px;
   font-size: 15px;
@@ -63,7 +63,7 @@ footer {
 h1 {
   font-family: "Playfair Display", serif;
   font-weight: 900;
-  font-size: 70px;
+  font-size: 50px;
 }
 
 #temperature {
@@ -83,8 +83,8 @@ small {
 .col.description {
   font-size: 20px;
   position: relative;
-  top: 10px;
-  left: 60px;
+  top: 5px;
+  left: 30px;
   color: #f84047;
   font-weight: 600;
 }
