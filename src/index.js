@@ -21,7 +21,7 @@ function showTemperature(response) {
   let fahrenheit = Math.round((temperature * 9) / 5 + 32);
 
   iconURL = response.data.condition.icon_url;
-  icon.innerHTML = `<img src="${iconURL}" width="150"/>`;
+  icon.innerHTML = `<img src="${iconURL}" width="200"/>`;
   cityName.innerHTML = `${response.data.city}, ${response.data.country}`;
   humidity.innerHTML = `${response.data.temperature.humidity}%`;
   temperature.innerHTML = cityTemp;
@@ -29,6 +29,8 @@ function showTemperature(response) {
   windspeed.innerHTML = `${response.data.wind.speed}km/h`;
   let date = new Date(response.data.time * 1000);
   time.innerHTML = getDate(date);
+
+  getWeatherForecast(response.data.city);
 }
 
 function getDate(date) {
@@ -42,6 +44,41 @@ function getDate(date) {
   return `${day}, ${hours}:${minutes}`;
 }
 
+function formatDay(timeStamp) {
+  let date = new Date(timeStamp * 1000);
+  return days[date.getDay()];
+}
+
+function displayForecast(response) {
+  let forecast = "";
+  response.data.daily.forEach(function (day, index) {
+    if (index < 5) {
+      forecast =
+        forecast +
+        `<div class="weather-forecast-daily">
+        <div class="forecast-date">${formatDay(day.time)}</div>
+
+        <img src="${day.condition.icon_url}" class="weather-forecast-icon" />
+        <div class="weather-forecast-temperature">
+          <div class="weather-temperature-high">
+            <strong>${Math.round(day.temperature.maximum)}º</strong>
+          </div>
+          <div class="weather-temperature-low">${Math.round(
+            day.temperature.minimum
+          )}º</div>
+        </div>
+      </div>`;
+    }
+  });
+  let dailyForecast = document.querySelector("#forecast");
+  dailyForecast.innerHTML = forecast;
+}
+
+function getWeatherForecast(city) {
+  let apiURL = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiURL).then(displayForecast);
+}
+
 function submitForm(event) {
   event.preventDefault();
   let searchInput = document.querySelector(".search-city");
@@ -53,4 +90,5 @@ searchCity.addEventListener("submit", submitForm);
 
 let defaultCity = "Lagos";
 let apiURL = `https://api.shecodes.io/weather/v1/current?query=${defaultCity}&key=${apiKey}&units=metric`;
+
 axios.get(apiURL).then(showTemperature);

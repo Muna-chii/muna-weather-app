@@ -43,82 +43,31 @@
           <small id="time"></small>
         </h1>
         <hr />
-        <div class="row">
-          <div class="col">
-            <span id="temperature"></span
-            ><span id="metric"
-              >°<a href="#" id="degree-celcius">C</a>
-              |
-              <a href="#" id="degree-farenheit">F</a></span
-            >
-
-            <p>
-              <small>
-                Humidity:
-                <strong class="more-details" id="humidity"></strong>
-                <br />Wind: <strong class="more-details" id="wind"></strong
-              ></small>
-            </p>
-          </div>
-          <div class="col description">
-            <div id="icon"></div>
-            <span id="sky-description"></span>
-          </div>
-        </div>
-        <div class="daily-forecast">
+        <main>
           <div class="row">
             <div class="col">
-              <div class="weather-forecast-date">Thur</div>
-              <div class="weatherforecast-icon">
-                <img src="#" alt="" />
-              </div>
-              <div class="weather-forecast-temperature">
-                <span class="weather-temperature-high">14°</span>
-                <span class="weather-temperature-low"> 12°</span>
-              </div>
+              <span id="temperature"></span
+              ><span id="metric"
+                >°<a href="#" id="degree-celcius">C</a>
+                |
+                <a href="#" id="degree-farenheit">F</a></span
+              >
+
+              <p>
+                <small>
+                  Humidity:
+                  <strong class="more-details" id="humidity"></strong>
+                  <br />Wind: <strong class="more-details" id="wind"></strong
+                ></small>
+              </p>
             </div>
-            <div class="col">
-              <div class="weather-forecast-date">Thur</div>
-              <div class="weatherforecast-icon">
-                <img src="#" alt="" />
-              </div>
-              <div class="weather-forecast-temperature">
-                <span class="weather-temperature-high">14°</span>
-                <span class="weather-temperature-low"> 12°</span>
-              </div>
-            </div>
-            <div class="col">
-              <div class="weather-forecast-date">Thur</div>
-              <div class="weatherforecast-icon">
-                <img src="#" alt="" />
-              </div>
-              <div class="weather-forecast-temperature">
-                <span class="weather-temperature-high">14°</span>
-                <span class="weather-temperature-low"> 12°</span>
-              </div>
-            </div>
-            <div class="col">
-              <div class="weather-forecast-date">Thur</div>
-              <div class="weatherforecast-icon">
-                <img src="#" alt="" />
-              </div>
-              <div class="weather-forecast-temperature">
-                <span class="weather-temperature-high">14°</span>
-                <span class="weather-temperature-low"> 12°</span>
-              </div>
-            </div>
-            <div class="col">
-              <div class="weather-forecast-date">Thur</div>
-              <div class="weatherforecast-icon">
-                <img src="#" alt="" />
-              </div>
-              <div class="weather-forecast-temperature">
-                <span class="weather-temperature-high">14°</span>
-                <span class="weather-temperature-low"> 12°</span>
-              </div>
+            <div class="col description">
+              <div id="icon"></div>
+              <span id="sky-description"></span>
             </div>
           </div>
-        </div>
+          <div class="daily-forecast" id="forecast"></div>
+        </main>
         <hr />
         <footer>
           This website was coded by
@@ -127,8 +76,9 @@
           and hosted on
           <a href="https://muna-weather-livid.vercel.app/#">Vercel</a>
         </footer>
+
+        <script src="src\index.js"></script>
       </div>
     </div>
-    <script src="src\index.js"></script>
   </body>
 </html>

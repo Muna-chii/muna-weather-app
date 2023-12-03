@@ -5,7 +5,7 @@ body {
   max-width: 100%;
 }
 .search-city {
-  width: 300px;
+  width: 350px;
   padding: 5px 20px;
   padding-left: 15px;
   font-size: 15px;
@@ -42,7 +42,7 @@ body {
   margin-top: 40px;
   border: 0px solid black;
   border-radius: 7px;
-  max-width: 600px;
+  max-width: 650px;
   margin: 30px auto;
   padding: 20px;
   padding-bottom: 5px;
@@ -88,28 +88,39 @@ small {
   color: #f84047;
   font-weight: 600;
 }
+.row {
+  margin-bottom: 0;
+}
 .more-details {
   color: red;
 }
 #sky-description {
   position: relative;
   left: 35px;
-  top: -20px;
+  top: -40px;
+  font-size: larger;
 }
 .daily-forecast {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   font-size: 16px;
+  text-align: center;
+  margin: 0;
 }
-.daily-forecast .col:hover {
+.daily-forecast :hover {
   background-color: #c5c2c2;
   border-radius: 10px;
 }
 .weather-forecast-temperature {
   color: red;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
-.weather-forecast-date {
+.forecast-date {
   opacity: 0.6;
 }
 .weather-temperature-low {
   opacity: 0.6;
+  margin-left: 10px;
 }
